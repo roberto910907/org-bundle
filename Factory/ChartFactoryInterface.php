@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Factory;
+namespace SoftDevel\OrgChartBundle\Factory;
 
 use SoftDevel\OrgChartBundle\Chart\AbstractChart;
 

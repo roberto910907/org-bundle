@@ -9,7 +9,7 @@ use SoftDevel\OrgBundle\Chart\AbstractChart;
  * @author  Roberto Rielo <roberto910907@gmail.com>.
  * @version OrgBundle v1.0 16/05/18 10:49 PM
  */
-class ChartFactory
+class ChartFactory implements ChartFactoryInterface
 {
     private $entityManager;
 

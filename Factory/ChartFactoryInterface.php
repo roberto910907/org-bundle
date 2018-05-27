@@ -2,7 +2,7 @@
 
 namespace SoftDevel\OrgBundle\Factory;
 
-use SoftDevel\OrgBundle\Chart\AbstractChart;
+use SoftDevel\OrgChartBundle\Chart\AbstractChart;
 
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.

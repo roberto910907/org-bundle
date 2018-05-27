@@ -1,11 +1,11 @@
 services:
-    SoftDevel\OrgBundle\Factory\ChartFactory:
+    SoftDevel\OrgChartBundle\Factory\ChartFactory:
         arguments: ["@doctrine.orm.entity_manager"]
 
-    SoftDevel\OrgBundle\Factory\ChartFactoryInterface:
-        alias: 'SoftDevel\OrgBundle\Factory\ChartFactory'
+    SoftDevel\OrgChartBundle\Factory\ChartFactoryInterface:
+        alias: 'SoftDevel\OrgChartBundle\Factory\ChartFactory'
 
-    SoftDevel\OrgBundle\Twig\ChartExtension:
+    SoftDevel\OrgChartBundle\Twig\ChartExtension:
         arguments: ["@twig", "@form.factory"]
         tags:
             - { name: twig.extension }

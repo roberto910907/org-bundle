@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Chart;
+namespace SoftDevel\OrgChartBundle\Chart;
 
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.

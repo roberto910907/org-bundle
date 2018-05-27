@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Chart;
+namespace SoftDevel\OrgChartBundle\Chart;
 
 use Doctrine\ORM\EntityManager;
 use Symfony\Component\HttpFoundation\JsonResponse;

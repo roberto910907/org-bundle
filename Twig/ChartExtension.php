@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Twig;
+namespace SoftDevel\OrgChartBundle\Twig;
 
 use SoftDevel\OrgBundle\Chart\AbstractChart;
 use Twig_Environment;
@@ -29,17 +29,17 @@ class ChartExtension extends \Twig_Extension
         ];
     }
 
-    public function renderChartJs(AbstractChart $gantt)
+    public function renderChartJs(AbstractChart $chart)
     {
         return $this->twig->render("@Org/orgChart/chart.js.twig", [
-            'gantt' => $gantt
+            'chart' => $chart
         ]);
     }
 
-    public function renderChartHtml(AbstractChart $gantt)
+    public function renderChartHtml(AbstractChart $chart)
     {
         return $this->twig->render("@Org/orgChart/chart.html.twig", [
-            'gantt' => $gantt
+            'chart' => $chart
         ]);
     }
 

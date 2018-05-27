@@ -1,9 +1,9 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Factory;
+namespace SoftDevel\OrgChartBundle\Factory;
 
 use Doctrine\ORM\EntityManager;
-use SoftDevel\OrgBundle\Chart\AbstractChart;
+use SoftDevel\OrgChartBundle\Chart\AbstractChart;
 
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.

@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgBundle\Controller;
+namespace SoftDevel\OrgChartBundle\Controller;
 
 use SoftDevel\OrgBundle\Factory\ChartFactory;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

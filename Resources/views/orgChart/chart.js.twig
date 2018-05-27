@@ -1,9 +1,11 @@
-var editor = new dhx.DiagramEditor(document.body, {
+let chartSelector = "#{{ chart.getName() }}" || document.body;
+
+let editor = new dhx.DiagramEditor(chartSelector, {
     type: "org",
     shapeType: "img-card"
 });
 
-var bigOrganogramData = [
+let bigOrganogramData = [
     {
         "id": "1",
         "text": "Chairman & CEO",
@@ -120,4 +122,4 @@ var bigOrganogramData = [
     }
 ];
 
-editor.parse(bigOrganogramData);
+editor.parse([{}]);

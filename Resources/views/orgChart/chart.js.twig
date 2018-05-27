@@ -1,0 +1,123 @@
+var editor = new dhx.DiagramEditor(document.body, {
+    type: "org",
+    shapeType: "img-card"
+});
+
+var bigOrganogramData = [
+    {
+        "id": "1",
+        "text": "Chairman & CEO",
+        "title": "Henry Bennett",
+        "img": "../common/img/avatar-1.png"
+    },
+    {
+        "id": "2",
+        "text": "QA Lead",
+        "title": "Emma Lynch",
+        "img": "../common/img/avatar-2.png",
+        "parent": 1,
+        "dir": "vertical"
+    },
+    {
+        "id": "2.1",
+        "text": "QA",
+        "title": "Charles Little",
+        "img": "../common/img/avatar-4.png",
+        "parent": 2
+    },
+    {
+        "id": "2.2",
+        "text": "QA",
+        "title": "Douglas Riley",
+        "img": "../common/img/avatar-9.png",
+        "parent": 2
+    },
+    {
+        "id": "2.3",
+        "text": "QA",
+        "title": "Eugene Foster",
+        "img": "../common/img/avatar-12.png",
+        "parent": 2
+    },
+    {
+        "id": "3",
+        "text": "Technical Director",
+        "title": "Jerry Wagner",
+        "img": "../common/img/avatar-3.png",
+        "parent": 1
+    },
+    {
+        "id": "3.1",
+        "text": "Team Lead",
+        "title": "Mark Nichols",
+        "img": "../common/img/avatar-7.png",
+        "parent": 3
+    },
+    {
+        "id": "3.1.1",
+        "text": "Programmer",
+        "title": "Sean Parker",
+        "img": "../common/img/avatar-10.png",
+        "parent": 3.1,
+        "open": false
+    },
+    {
+        "id": "3.1.1.1",
+        "text": "Junior",
+        "title": "Laura Alvarez",
+        "img": "../common/img/avatar-8.png",
+        "parent": "3.1.1"
+    },
+    {
+        "id": "4",
+        "text": "Manager",
+        "title": "Jonathan Lane",
+        "img": "../common/img/avatar-5.png",
+        "parent": "1",
+        "dir": "vertical"
+    },
+    {
+        "id": "4.1",
+        "text": "Marketer",
+        "title": "Sandra Butler",
+        "img": "../common/img/avatar-6.png",
+        "parent": "4"
+    },
+    {
+        "id": "4.2",
+        "text": "Designer",
+        "title": "Julie Green",
+        "img": "../common/img/avatar-16.png",
+        "parent": "4"
+    },
+    {
+        "id": "4.3",
+        "text": "Sales Manager",
+        "title": "Richard Hicks",
+        "img": "../common/img/avatar-14.png",
+        "parent": "4"
+    },
+    {
+        "id": "3.2",
+        "text": "Team Lead",
+        "title": "Nicholas Cruz",
+        "img": "../common/img/avatar-13.png",
+        "parent": 3
+    },
+    {
+        "id": "3.2.1",
+        "text": "Programmer",
+        "title": "Michael Shaw",
+        "img": "../common/img/avatar-11.png",
+        "parent": "3.2"
+    },
+    {
+        "id": "3.2.1.1",
+        "text": "Junior",
+        "title": "John Flores",
+        "img": "../common/img/avatar-15.png",
+        "parent": "3.2.1"
+    }
+];
+
+editor.parse(bigOrganogramData);

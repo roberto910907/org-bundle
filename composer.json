@@ -1,0 +1,21 @@
+{
+  "name": "softdevel/organization-bundle",
+  "description": "Provide integration with dhtmlx-organization js lib",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roberto Rielo",
+      "email": "rober910907@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SoftDevel\\OrgBundle\\": ""
+    }
+  }
+}

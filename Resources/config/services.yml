@@ -1,0 +1,13 @@
+services:
+    OrgBundle\Controller\DefaultController:
+        arguments: ["@org.chart_factory"]
+
+    org.chart_factory:
+        class: SoftDevel\OrgBundle\Factory\ChartFactory
+        arguments: ["@doctrine.orm.entity_manager"]
+
+    org.twig_extension:
+        class: SoftDevel\OrgBundle\Twig\ChartExtension
+        arguments: ["@twig", "@form.factory"]
+        tags:
+            - { name: twig.extension }

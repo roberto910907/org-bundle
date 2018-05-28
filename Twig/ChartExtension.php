@@ -2,7 +2,7 @@
 
 namespace SoftDevel\OrgChartBundle\Twig;
 
-use SoftDevel\OrgBundle\Chart\AbstractChart;
+use SoftDevel\OrgChartBundle\Chart\AbstractChart;
 use Twig_Environment;
 
 /**
@@ -31,14 +31,14 @@ class ChartExtension extends \Twig_Extension
 
     public function renderChartJs(AbstractChart $chart)
     {
-        return $this->twig->render("@Org/orgChart/chart.js.twig", [
+        return $this->twig->render("@OrgChart/org_chart/chart.js.twig", [
             'chart' => $chart
         ]);
     }
 
     public function renderChartHtml(AbstractChart $chart)
     {
-        return $this->twig->render("@Org/orgChart/chart.html.twig", [
+        return $this->twig->render("@OrgChart/org_chart/chart.html.twig", [
             'chart' => $chart
         ]);
     }

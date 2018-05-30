@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftDevel\OrgChartBundle\Traits;
+namespace SoftDevel\OrgChartBundle\Model;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Tree\Traits\NestedSetEntity;
@@ -17,13 +17,13 @@ abstract class AbstractTree
     /**
      * @Gedmo\TreeParent
      *
-     * @ORM\ManyToOne(targetEntity="SoftDevel\OrgChartBundle\Traits\TreeTrait", inversedBy="children")
+     * @ORM\ManyToOne(targetEntity="SoftDevel\OrgChartBundle\Model\AbtractTree", inversedBy="children")
      * @ORM\JoinColumn(referencedColumnName="id", onDelete="CASCADE")
      */
     private $parent;
 
     /**
-     * @ORM\OneToMany(targetEntity="SoftDevel\OrgChartBundle\Traits\TreeTrait", mappedBy="parent")
+     * @ORM\OneToMany(targetEntity="SoftDevel\OrgChartBundle\Model\AbtractTree", mappedBy="parent")
      * @ORM\OrderBy({"lft" = "ASC"})
      */
     private $childrens;
